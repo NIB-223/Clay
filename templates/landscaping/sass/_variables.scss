@@ -1,0 +1,23 @@
+/* Colors */
+$color-primary: #176e00;
+$color-secondary: #80ac31;
+$color-accent: #aede3e;
+
+/* Spacing */
+
+$base-spacer: 1rem;
+
+$spacers: (
+  0: 0,
+  1: $base-spacer * .25,
+  2: $base-spacer * .5,
+  3: $base-spacer,
+  4: $base-spacer * 1.5,
+  5: $base-spacer * 3,
+);
+
+/* Radius */
+
+$border-radius: 0px;
+
+
