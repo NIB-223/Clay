@@ -1,0 +1,29 @@
+.wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header header header"
+    "...... about-text about-img about-img ......"
+    "...... services1 services2 services3 ......";
+}
+
+#header {
+  grid-area: header;
+}
+.about-text {
+  grid-area: about-text;
+}
+.about-img {
+  grid-area: about-img;
+}
+.services1 {
+  grid-area: services1;
+}
+.services2 {
+  grid-area: services2;
+}
+.services3 {
+  grid-area: services3;
+}

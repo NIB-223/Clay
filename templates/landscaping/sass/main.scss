@@ -1,17 +1,10 @@
 @import "normalize.css/normalize.css";
-@import "./abstracts/variables";
-@import "./abstracts/mixins";
 
-@import "./layout/header";
-@import "./layout/navigation";
-@import "./layout/breakpoints";
-@import "./layout/grid";
+@import "./grid";
+@import "./container";
+@import "./variables";
+@import "./mixins";
+@import "./typography";
 
-@import "./pages/home";
-
-@import "./components/buttons";
-
-// * {
-//   box-sizing: border-box;
-//   margin: 0;
-// }
+@import "./sections/header";
+@import "./sections/about";

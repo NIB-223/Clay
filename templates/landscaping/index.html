@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../landscaping/sass/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../landscaping/css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
@@ -13,26 +16,182 @@
 </head>
 
 <body>
-    <!--Heading-->
+    <!--Grid Wrapper-->
 
-    <header id="header">
+    <div class="wrapper">
 
-        <!--Navbar-->
-        <nav class="navbar">
-            <a href="/" class="navbar__logo"><img src="../landscaping/img/"></a>
-            <div class="navbar__bars">
-                <div class="navbar__menu">
-                    <a href="#" class="navbar__menu--link">Home</a>
-                    <a href="#" class="navbar__menu--link">About</a>
-                    <a href="#" class="navbar__menu--link">Services</a>
-                    <a href="#" class="navbar__menu--link">Gallery</a>
-                    <a href="#" class="navbar__menu--link">Testimonials</a>
-                    <a href="#" class="navbar__menu--link">Contact Us</a>
+        <header id="header">
+
+            <!--Navbar-->
+            <nav class="navbar">
+                <a href="/" class="navbar-logo"><img src="../landscaping/img/"></a>
+                <div class="navbar">
+                    <div class="navbar-menu">
+                        <a href="#" class="navbar-menu-link">Home</a>
+                        <a href="#" class="navbar-menu-link">About</a>
+                        <a href="#" class="navbar-menu-link">Services</a>
+                        <a href="#" class="navbar-menu-link">Gallery</a>
+                        <a href="#" class="navbar-menu-link">Testimonials</a>
+                        <a href="#" class="navbar-menu-link">Contact Us</a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="header-content">
+                <div class="header-titles">
+                    <h1>Lorem Ipsum</h1>
+                    <h3>Lorem Ipsum</h3>
+                </div>
+                <div class="header-btns">
+                    <a href="#">a button</a>
+                    <a href="#">a button</a>
                 </div>
             </div>
-        </nav>
+        </header>
 
-    </header>
+
+        <!--About Section-->
+        <section>
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, eaque? Sapiente, voluptate unde.
+                    Veritatis eius ab labore culpa, saepe totam? Quae odio ipsam necessitatibus tempora!</p>
+            </div>
+
+            <div class="about-img">
+                <img src="https://via.placeholder.com/300.png/09f/fff
+    
+                        C/O https://placeholder.com/">
+                <img src="https://via.placeholder.com/300.png/09f/fff
+    
+                        C/O https://placeholder.com/">
+            </div>
+        </section>
+
+
+        <!--Services Section-->
+        <section id="services">
+            <h1>Services</h1>
+
+            <div class="services1">
+                <img src="#">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis maiores, quos sequi
+                    necessitatibus inventore voluptatum repellat repudiandae neque aperiam sint suscipit ad nihil rerum
+                    iusto?</p>
+            </div>
+            <div class="services2">
+                <img src="#">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis maiores, quos sequi
+                    necessitatibus inventore voluptatum repellat repudiandae neque aperiam sint suscipit ad nihil rerum
+                    iusto?</p>
+            </div>
+            <div class="services3">
+                <img src="#">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis maiores, quos sequi
+                    necessitatibus inventore voluptatum repellat repudiandae neque aperiam sint suscipit ad nihil rerum
+                    iusto?</p>
+            </div>
+
+        </section>
+    </div>
+
+    <!--Gallery Section-->
+
+    <section id="gallery">
+        <div>
+            <h1>Gallery</h1>
+            <h3>Lorem Ipsum</h3>
+            <div>
+                <img src="">
+                <img src="">
+                <img src="">
+                <img src="">
+                <img src="">
+                <img src="">
+                <img src="">
+                <img src="">
+                <img src="">
+            </div>
+        </div>
+    </section>
+
+    <!--Testimonials Section-->
+
+    <section id="testimonials">
+        <div>
+            <h1>Testimonials</h1>
+            <h3>Lorem Ipsum</h3>
+            <div>
+                <div>
+                    <i></i>
+                    <p></p>
+                </div>
+                <div>
+                    <i></i>
+                    <p></p>
+                </div>
+                <div></div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact Section-->
+    <section>
+        <div>
+            <h1>Contact</h1>
+            <h3>Lorem Ipsum</h3>
+
+            <form>
+                <label></label>
+                <input>
+                <label></label>
+                <input>
+                <label></label>
+                <input>
+                <label></label>
+                <input>
+            </form>
+
+            <div>
+                <h4>Company Info</h4>
+                <h5>Address</h5>
+                <h5>Phone</h5>
+                <h5>Email</h5>
+            </div>
+
+            <form>
+                <textarea></textarea>
+                <button></button>
+            </form>
+        </div>
+
+    </section>
+
+    <!--Footer Section-->
+
+    <footer>
+        <div>
+            <h3>About Company</h3>
+        </div>
+        <div>
+            <h3>Business Hours</h3>
+        </div>
+        <div>
+            <h3>Connections</h3>
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+        <div>
+            <input>
+            <button></button>
+        </div>
+
+
+    </footer>
+
+
+    <!--Grid Wrapper Ends-->
 </body>
 
 </html>
