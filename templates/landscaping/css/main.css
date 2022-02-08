@@ -1,34 +1,6 @@
 @import "normalize.css/normalize.css";
-.wrapper {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
-  grid-template-rows: auto;
-  grid-template-areas: "header header header header header" "...... about-text about-img about-img ......" "...... services1 services2 services3 ......";
-}
-
-#header {
-  grid-area: header;
-}
-
-.about-text {
-  grid-area: about-text;
-}
-
-.about-img {
-  grid-area: about-img;
-}
-
-.services1 {
-  grid-area: services1;
-}
-
-.services2 {
-  grid-area: services2;
-}
-
-.services3 {
-  grid-area: services3;
+* {
+  box-sizing: border-box;
 }
 
 .container {
@@ -51,17 +23,76 @@
 /* Spacing */
 /* Radius */
 /* Font families */
-/* Font sizes */
-/* Line heights */
-/* Letter spacings */
-.navbar {
-  background-color: red;
+/* Colors */
+/* Spacing */
+/* Radius */
+.btn-main {
+  display: inline-block;
+  padding: 10px;
+  width: 150px;
+  border-radius: 6px;
+  background-color: #80ac31;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.25s;
 }
 
-.btn {
-  padding: 24px 48px;
+.btn-secondary {
+  display: inline-block;
+  padding: 10px;
+  width: 150px;
   border-radius: 6px;
-  box-shadow: 0 1.25em 0.5em;
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px solid white;
+  transition: 0.25s;
+}
+
+.btn-main:hover,
+.btn-main:focus {
+  background-color: #6a9122;
+  transition: 0.25s;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  text-decoration: underline;
+  transition: 0.25s;
+}
+
+#header {
+  background-image: linear-gradient(rgba(24, 24, 24, 0.64), rgba(24, 24, 24, 0.64), rgba(24, 24, 24, 0.64)), url("../img/header.jpg");
+  background-position: bottom;
+  background-size: cover;
+  height: 700px;
+}
+#header .header-text-container {
+  text-align: center;
+}
+#header .header-text-container .header-text-content {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  margin-top: 5rem;
+  padding: 0 1rem;
+}
+#header .header-text-container .header-text-content .header-text-titles h1 {
+  font-size: 3rem;
+}
+#header .header-text-container .header-text-content .header-text-titles h2 {
+  font-size: 2rem;
+}
+#header .header-text-container .header-text-btns {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+#header .header-text-container .header-text-btns a {
+  color: white;
+  font-family: "Dosis", sans-serif;
 }
 
 /*# sourceMappingURL=main.css.map */

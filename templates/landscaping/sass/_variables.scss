@@ -1,7 +1,9 @@
 /* Colors */
 $color-primary: #176e00;
-$color-secondary: #80ac31;
-$color-accent: #aede3e;
+$color-secondary: #279e06;
+$color-accent: #80ac31;
+$btn-main-hover: #6a9122;
+$btn-secondary-hover: #2ac400;
 
 /* Spacing */
 
@@ -9,8 +11,8 @@ $base-spacer: 1rem;
 
 $spacers: (
   0: 0,
-  1: $base-spacer * .25,
-  2: $base-spacer * .5,
+  1: $base-spacer * 0.25,
+  2: $base-spacer * 0.5,
   3: $base-spacer,
   4: $base-spacer * 1.5,
   5: $base-spacer * 3,
@@ -19,5 +21,3 @@ $spacers: (
 /* Radius */
 
 $border-radius: 0px;
-
-

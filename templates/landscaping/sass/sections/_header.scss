@@ -1,2 +1,49 @@
 @import "../components/navbar";
 @import "../components/buttons";
+
+#header {
+  background-image: linear-gradient(
+      rgba(24, 24, 24, 0.64),
+      rgba(24, 24, 24, 0.64),
+      rgba(24, 24, 24, 0.64)
+    ),
+    url("../img/header.jpg");
+  background-position: bottom;
+  background-size: cover;
+  height: 700px;
+
+  .header-text-container {
+    text-align: center;
+
+    .header-text-content {
+      color: white;
+      font-family: $ff-primary;
+      margin-top: 5rem;
+      padding: 0 1rem;
+
+      .header-text-titles {
+        h1 {
+          font-size: $titles;
+        }
+      }
+      .header-text-titles {
+        h2 {
+          font-size: $subtitles;
+        }
+      }
+    }
+
+    .header-text-btns {
+      margin-top: 5rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      a {
+        color: white;
+        font-family: $ff-secondary;
+      }
+    }
+  }
+}
