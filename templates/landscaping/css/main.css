@@ -22,16 +22,170 @@
 /* Colors */
 /* Spacing */
 /* Radius */
+/*Breakpoints*/
 /* Font families */
+a {
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  font-family: "Dosis", sans-serif;
+}
+
+ul {
+  list-style: none;
+  font-size: 2rem;
+}
+
+.mobile-logo {
+  margin: 0.5%;
+}
+
+.logo {
+  display: none;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+.menu__icon {
+  height: 22px;
+  width: 33px;
+  margin: 1%;
+  position: absolute;
+  top: 10px;
+  right: 3%;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 20;
+}
+.menu__icon span {
+  display: block;
+  background: #fff;
+  width: 100%;
+  height: 4px;
+  margin-top: -2px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+.menu__icon:before, .menu__icon:after {
+  content: "";
+  display: block;
+  background: #fff;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  transform-origin: center center;
+  transform: rotate(0deg);
+  transition: all 0.3s ease;
+}
+.menu__icon:before {
+  top: 2px;
+  margin-top: -2px;
+}
+.menu__icon:after {
+  bottom: 2px;
+  margin-bottom: -2px;
+}
+
+.menu_shown .menu__icon span {
+  background: transparent;
+}
+.menu_shown .menu__icon:before {
+  top: 50%;
+  transform: rotate(45deg);
+}
+.menu_shown .menu__icon:after {
+  bottom: 50%;
+  transform: rotate(-45deg);
+}
+
+.mobile.menu {
+  margin-top: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75%;
+  min-height: 100vh;
+  text-align: left;
+  padding-top: 112px;
+  background: #70a70c;
+  z-index: 10;
+  transition: all 0.4s ease-in-out;
+  transform: translateX(-100%);
+}
+.mobile .menu__item {
+  display: block;
+  line-height: 2;
+  padding: 25px 0;
+}
+
+.menu_shown .mobile.menu {
+  transform: translateX(0);
+}
+
+@media (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+
+  .mobile-logo {
+    display: none;
+  }
+
+  .logo {
+    display: initial;
+    margin-left: 1rem;
+  }
+
+  .desktop-nav {
+    padding-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .desktop-nav .menu a {
+    font-size: 1.25rem;
+    margin-right: 1rem;
+  }
+  .desktop-nav .menu .navbar-menu-link .nav_border {
+    display: inline-block;
+    padding: 2px 0px 4px;
+    position: relative;
+  }
+  .desktop-nav .menu .navbar-menu-link .nav_border:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    border-bottom: 1.75px solid white;
+    bottom: 1px;
+    transform: scaleX(0);
+    transition: transform 0.2s linear;
+  }
+  .desktop-nav .menu .navbar-menu-link:hover .nav_border:before, .desktop-nav .menu .navbar-menu-link:focus .nav_border:before {
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+@media (max-width: 481px) {
+  .mobile.menu {
+    width: 100%;
+  }
+}
 /* Colors */
 /* Spacing */
 /* Radius */
+/*Breakpoints*/
 .btn-main {
   display: inline-block;
   padding: 10px;
   width: 150px;
   border-radius: 6px;
-  background-color: #80ac31;
+  background-color: #70a70c;
   text-decoration: none;
   text-align: center;
   cursor: pointer;
@@ -57,15 +211,23 @@
 
 .btn-secondary:hover,
 .btn-secondary:focus {
-  text-decoration: underline;
+  border-color: #6a9122;
   transition: 0.25s;
 }
+.btn-secondary:hover .btn-secondary:hover a,
+.btn-secondary:focus .btn-secondary:hover a {
+  color: blue;
+}
 
+/* Colors */
+/* Spacing */
+/* Radius */
+/*Breakpoints*/
 #header {
   background-image: linear-gradient(rgba(24, 24, 24, 0.64), rgba(24, 24, 24, 0.64), rgba(24, 24, 24, 0.64)), url("../img/header.jpg");
   background-position: bottom;
   background-size: cover;
-  height: 700px;
+  height: 100vh;
 }
 #header .header-text-container {
   text-align: center;
@@ -73,10 +235,10 @@
 #header .header-text-container .header-text-content {
   color: white;
   font-family: "Roboto", sans-serif;
-  margin-top: 5rem;
-  padding: 0 1rem;
+  padding: 5rem 1rem 0;
 }
 #header .header-text-container .header-text-content .header-text-titles h1 {
+  margin-top: 0;
   font-size: 3rem;
 }
 #header .header-text-container .header-text-content .header-text-titles h2 {
@@ -93,6 +255,12 @@
 #header .header-text-container .header-text-btns a {
   color: white;
   font-family: "Dosis", sans-serif;
+}
+
+@media (min-width: 450px) {
+  #header {
+    height: 600px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

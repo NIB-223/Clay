@@ -5,7 +5,7 @@
   padding: 10px;
   width: 150px;
   border-radius: 6px;
-  background-color: $color-accent;
+  background-color: $color-main;
   text-decoration: none;
   text-align: center;
   cursor: pointer;
@@ -24,11 +24,14 @@
 
 .btn-main:hover,
 .btn-main:focus {
-  background-color: $btn-main-hover;
+  background-color: $btn-hover;
   transition: 0.25s;
 }
 .btn-secondary:hover,
 .btn-secondary:focus {
-  text-decoration: underline;
+  border-color: $btn-hover;
   transition: 0.25s;
+  .btn-secondary:hover a {
+    color: blue;
+  }
 }

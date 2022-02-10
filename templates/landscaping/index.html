@@ -21,46 +21,33 @@
     <!--Header-->
     <header id="header">
 
-        <!--Mobile Navbar/Sidenav-->
-        <nav id="sidenav">
-
-            <ul class="sidenav-items">
-                <li href="#" class="navbar-menu-link">Home</li>
-                <li href="#" class="navbar-menu-link">About</li>
-                <li href="#" class="navbar-menu-link">Services</li>
-                <li href="#" class="navbar-menu-link">Gallery</li>
-                <li href="#" class="navbar-menu-link">Testimonials</li>
-                <li href="#" class="navbar-menu-link">Contact Us</li>
-            </ul>
-
-            <div class="sidenav-footer">
-                <ul>
-                    <li>F</li>
-                    <li>I</li>
-                    <li>E</li>
-                </ul>
-            </div>
-
-        </nav>
-
-
         <!--Navbar-->
-        <!-- <nav class="navbar">
-            <a href="/" class="navbar-logo"><img src="../landscaping/img/"></a>
-            <div class="navbar">
-                <div class="navbar-menu">
-                    <a href="#" class="navbar-menu-link">Home</a>
-                    <a href="#" class="navbar-menu-link">About</a>
-                    <a href="#" class="navbar-menu-link">Services</a>
-                    <a href="#" class="navbar-menu-link">Gallery</a>
-                    <a href="#" class="navbar-menu-link">Testimonials</a>
-                    <a href="#" class="navbar-menu-link">Contact Us</a>
+        <nav>
+            <div class="desktop-nav">
+                <a href="#"><img width="52px" class="logo" src="../landscaping/img/logo.png"></a>
+                <div id="desktop" class="menu">
+                    <a href="#home" class="navbar-menu-link"><span class="nav_border">Home</span></a>
+                    <a href="#about" class="navbar-menu-link"><span class="nav_border">About</span></a>
+                    <a href="#services" class="navbar-menu-link"><span class="nav_border">Services</span></a>
+                    <a href="#gallery" class="navbar-menu-link"><span class="nav_border">Gallery</span></a>
+                    <a href="#testimonials" class="navbar-menu-link"><span class="nav_border">Testimonials</span></a>
+                    <a href="#contact" class="navbar-menu-link"><span class="nav_border">Contact</span></a>
                 </div>
             </div>
-        </nav> -->
+
+            <a class="menu__icon mobile"><span></span></a>
+            <a href="#"><img width="52px" class="mobile-logo" src="../landscaping/img/logo.png"></a>
+            <ul class="menu mobile">
+                <li><a href="#home" class="navbar-menu-link">Home</a></li>
+                <li><a href="#about" class="navbar-menu-link">About</a></li>
+                <li><a href="#services" class="navbar-menu-link">Services</a></li>
+                <li><a href="#gallery" class="navbar-menu-link">Gallery</a></li>
+                <li><a href="#testimonials" class="navbar-menu-link">Testimonials</a></li>
+                <li><a href="#contact" class="navbar-menu-link">Contact</a></li>
+            </ul>
+        </nav>
 
         <!--header text-->
-        <!-- <div class="grid"> -->
         <div class="header-text-container">
             <div class="header-text-content">
                 <div class="header-text-titles">
@@ -73,7 +60,6 @@
                 <a href="#" class="btn-secondary">Learn More</a>
             </div>
         </div>
-        <!-- </div> -->
 
     </header>
 
@@ -229,5 +215,8 @@
 
 
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="./js/main.js"></script>
 
 </html>

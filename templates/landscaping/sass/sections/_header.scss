@@ -1,5 +1,6 @@
 @import "../components/navbar";
 @import "../components/buttons";
+@import "../variables";
 
 #header {
   background-image: linear-gradient(
@@ -10,19 +11,16 @@
     url("../img/header.jpg");
   background-position: bottom;
   background-size: cover;
-  height: 700px;
-
+  height: 100vh;
   .header-text-container {
     text-align: center;
-
     .header-text-content {
       color: white;
       font-family: $ff-primary;
-      margin-top: 5rem;
-      padding: 0 1rem;
-
+      padding: 5rem 1rem 0;
       .header-text-titles {
         h1 {
+          margin-top: 0;
           font-size: $titles;
         }
       }
@@ -45,5 +43,11 @@
         font-family: $ff-secondary;
       }
     }
+  }
+}
+
+@media (min-width: 450px) {
+  #header {
+    height: 600px;
   }
 }

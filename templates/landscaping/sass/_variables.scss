@@ -1,9 +1,8 @@
 /* Colors */
-$color-primary: #176e00;
-$color-secondary: #279e06;
-$color-accent: #80ac31;
-$btn-main-hover: #6a9122;
-$btn-secondary-hover: #2ac400;
+
+$color-main: #70a70c;
+$color-secondary: #272727;
+$btn-hover: #6a9122;
 
 /* Spacing */
 
@@ -21,3 +20,12 @@ $spacers: (
 /* Radius */
 
 $border-radius: 0px;
+
+/*Breakpoints*/
+
+$viewport_size: (
+  s: 320px,
+  s-m: 481px,
+  m: 768px,
+  l: 1200px,
+);
