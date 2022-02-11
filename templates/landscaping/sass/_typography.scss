@@ -2,5 +2,17 @@
 $ff-primary: "Roboto", sans-serif;
 $ff-secondary: "Dosis", sans-serif;
 
-$titles: 3rem;
-$subtitles: 2rem;
+/*Font sizes*/
+$font-sizes: (
+  "xs": 1.25rem,
+  "s": 1.75rem,
+  "m": 2.25rem,
+  "l": 3rem,
+  "xl": 3.75rem,
+);
+
+@each $size, $value in $font-sizes {
+  .font-size-#{$size} {
+    font-size: $value;
+  }
+}

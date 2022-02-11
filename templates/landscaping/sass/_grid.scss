@@ -1,0 +1,10 @@
+#header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: [row1-start] 25%;
+}
+
+#about {
+  display: grid;
+  grid-template-columns: 1fr;
+}

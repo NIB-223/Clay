@@ -6,20 +6,134 @@ $btn-hover: #6a9122;
 
 /* Spacing */
 
-$base-spacer: 1rem;
-
-$spacers: (
-  0: 0,
-  1: $base-spacer * 0.25,
-  2: $base-spacer * 0.5,
-  3: $base-spacer,
-  4: $base-spacer * 1.5,
-  5: $base-spacer * 3,
+/*margin*/
+$m-spacer: (
+  "xs": 1rem,
+  "sm": 2rem,
+  "md": 3rem,
+  "lg": 4rem,
+  "xl": 5rem,
+  "xxl": 6rem,
 );
+
+@each $m-space, $value in $m-spacer {
+  .m-#{$m-space} {
+    margin: $value;
+  }
+}
+
+/*margin-top*/
+$mt-spacer: (
+  "xs": 1rem,
+  "sm": 2rem,
+  "md": 3rem,
+  "lg": 4rem,
+  "xl": 5rem,
+  "xxl": 6rem,
+);
+
+@each $mt-space, $value in $mt-spacer {
+  .mt-#{$mt-space} {
+    margin-top: $value;
+  }
+}
+
+/*margin-bottom*/
+$mb-spacer: (
+  "xs": 1rem,
+  "sm": 2rem,
+  "md": 3rem,
+  "lg": 4rem,
+  "xl": 5rem,
+  "xxl": 6rem,
+);
+
+@each $mb-space, $value in $mb-spacer {
+  .mb-#{$mb-space} {
+    margin-bottom: $value;
+  }
+}
+
+/*margin-left*/
+$ml-spacer: (
+  "xs": 1rem,
+  "sm": 2rem,
+  "md": 3rem,
+  "lg": 4rem,
+  "xl": 5rem,
+  "xxl": 6rem,
+);
+
+@each $ml-space, $value in $ml-spacer {
+  .ml-#{$ml-space} {
+    margin-left: $value;
+  }
+}
+
+/*margin-right*/
+$mr-spacer: (
+  "xs": 1rem,
+  "sm": 2rem,
+  "md": 3rem,
+  "lg": 4rem,
+  "xl": 5rem,
+  "xxl": 6rem,
+);
+
+@each $mr-space, $value in $mr-spacer {
+  .mr-#{$mr-space} {
+    margin-right: $value;
+  }
+}
+
+/*margin-left & right*/
+$mx-spacer: (
+  "xs": 1rem,
+  "sm": 2rem,
+  "md": 3rem,
+  "lg": 4rem,
+  "xl": 5rem,
+  "xxl": 6rem,
+);
+
+@each $mx-space, $value in $mx-spacer {
+  .mx-#{$mx-space} {
+    margin-left: $value;
+    margin-right: $value;
+  }
+}
+
+/*margin-top & botton*/
+$my-spacer: (
+  "xs": 1rem,
+  "sm": 2rem,
+  "md": 3rem,
+  "lg": 4rem,
+  "xl": 5rem,
+  "xxl": 6rem,
+);
+
+@each $my-space, $value in $my-spacer {
+  .my-#{$my-space} {
+    margin-top: $value;
+    margin-top: $value;
+  }
+}
 
 /* Radius */
 
-$border-radius: 0px;
+$border-radius: (
+  "sm": 0.125rem,
+  "md": 0.375rem,
+  "lg": 0.5rem,
+  "full": 9999px,
+);
+
+@each $radius, $value in $border-radius {
+  .border-radius-#{$radius} {
+    border-radius: $value;
+  }
+}
 
 /*Breakpoints*/
 

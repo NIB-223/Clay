@@ -12,27 +12,22 @@
   background-position: bottom;
   background-size: cover;
   height: 100vh;
+
   .header-text-container {
     text-align: center;
     .header-text-content {
       color: white;
       font-family: $ff-primary;
-      padding: 5rem 1rem 0;
+      padding: 0 1rem;
       .header-text-titles {
         h1 {
           margin-top: 0;
-          font-size: $titles;
-        }
-      }
-      .header-text-titles {
-        h2 {
-          font-size: $subtitles;
         }
       }
     }
 
     .header-text-btns {
-      margin-top: 5rem;
+      // margin-top: 5rem;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
