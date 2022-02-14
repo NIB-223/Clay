@@ -116,7 +116,7 @@ $my-spacer: (
 @each $my-space, $value in $my-spacer {
   .my-#{$my-space} {
     margin-top: $value;
-    margin-top: $value;
+    margin-bottom: $value;
   }
 }
 

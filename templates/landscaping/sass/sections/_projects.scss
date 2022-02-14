@@ -1,10 +1,9 @@
-#services {
+#projects {
   color: $color-secondary;
   font-family: $ff-primary;
   text-align: center;
-  .services1,
-  .services2,
-  .services3 {
-    margin: 3rem 0;
+  margin-top: 2.15rem;
+  img {
+    max-width: 100%;
   }
 }

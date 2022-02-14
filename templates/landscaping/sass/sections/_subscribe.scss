@@ -1,0 +1,38 @@
+#subscribe {
+  background-color: $color-main;
+
+  .subscribe-container {
+    display: flex;
+    flex-direction: column;
+
+    .subscribe-container-text {
+      h2,
+      p {
+        color: #fff;
+        font-family: $ff-primary;
+      }
+    }
+
+    .subscribe-form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      input {
+        height: 45px;
+        border: none;
+      }
+      ::-webkit-input-placeholder {
+        font-family: $ff-secondary;
+        color: $color-secondary;
+        font-size: 1.25rem;
+      }
+      button {
+        height: 45px;
+        background-color: $color-secondary;
+        color: #fff;
+        font-family: $ff-primary;
+        border: none;
+      }
+    }
+  }
+}

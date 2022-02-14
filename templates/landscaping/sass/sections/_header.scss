@@ -14,20 +14,14 @@
   height: 100vh;
 
   .header-text-container {
+    vertical-align: middle;
     text-align: center;
     .header-text-content {
       color: white;
       font-family: $ff-primary;
       padding: 0 1rem;
-      .header-text-titles {
-        h1 {
-          margin-top: 0;
-        }
-      }
     }
-
     .header-text-btns {
-      // margin-top: 5rem;
       display: flex;
       flex-wrap: wrap;
       align-items: center;

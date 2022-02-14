@@ -11,151 +11,203 @@
     <link rel="stylesheet" href="../landscaping/css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/3116d9e728.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
     <title>Lanscaping</title>
 </head>
 
 <body>
+    <grid class="grid">
+        <!--Header-->
+        <header id="header">
 
-    <!--Header-->
-    <header id="header">
+            <!--Navbar-->
+            <nav>
+                <!--Desktop Nav-->
+                <div class="desktop-nav">
+                    <a href="#"><img width="52px" class="logo" src="../landscaping/img/logo.png"></a>
+                    <div id="desktop" class="menu font-size-xs">
+                        <a href="#home" class="navbar-menu-link"><span class="nav_border">Home</span></a>
+                        <a href="#about" class="navbar-menu-link"><span class="nav_border">About</span></a>
+                        <a href="#services" class="navbar-menu-link"><span class="nav_border">Services</span></a>
+                        <a href="#gallery" class="navbar-menu-link"><span class="nav_border">Gallery</span></a>
+                        <a href="#testimonials" class="navbar-menu-link"><span
+                                class="nav_border">Testimonials</span></a>
+                        <a href="#contact" class="navbar-menu-link"><span class="nav_border">Contact</span></a>
+                    </div>
+                </div>
 
-        <!--Navbar-->
-        <nav>
-            <!--Desktop Nav-->
-            <div class="desktop-nav">
-                <a href="#"><img width="52px" class="logo" src="../landscaping/img/logo.png"></a>
-                <div id="desktop" class="menu font-size-xs">
-                    <a href="#home" class="navbar-menu-link"><span class="nav_border">Home</span></a>
-                    <a href="#about" class="navbar-menu-link"><span class="nav_border">About</span></a>
-                    <a href="#services" class="navbar-menu-link"><span class="nav_border">Services</span></a>
-                    <a href="#gallery" class="navbar-menu-link"><span class="nav_border">Gallery</span></a>
-                    <a href="#testimonials" class="navbar-menu-link"><span class="nav_border">Testimonials</span></a>
-                    <a href="#contact" class="navbar-menu-link"><span class="nav_border">Contact</span></a>
+                <!--Mobile Nav-->
+                <a class="menu__icon mobile"><span></span></a>
+                <a href="#"><img width="52px" class="mobile-logo" src="../landscaping/img/logo.png"></a>
+                <ul class="menu mobile font-size-m">
+                    <li><a href="#home" class="navbar-menu-link">Home</a></li>
+                    <li><a href="#about" class="navbar-menu-link">About</a></li>
+                    <li><a href="#services" class="navbar-menu-link">Services</a></li>
+                    <li><a href="#gallery" class="navbar-menu-link">Gallery</a></li>
+                    <li><a href="#testimonials" class="navbar-menu-link">Testimonials</a></li>
+                    <li><a href="#contact" class="navbar-menu-link">Contact</a></li>
+                </ul>
+            </nav>
+
+
+            <!--header text-->
+            <div class="header-text-container">
+                <div class="header-text-content">
+                    <div class="header-text-titles">
+                        <h1 class="font-size-l">Lorem Ipsum</h1>
+                        <h2 class="font-size-s">Lorem ipsum dolor sit amet.</h2>
+                    </div>
+                </div>
+                <div class="header-text-btns mt-md">
+                    <a href="#" class="btn-main border-radius-md">Get Quote</a>
+                    <a href="#" class="btn-secondary border-radius-md">Learn More</a>
                 </div>
             </div>
 
-            <!--Mobile Nav-->
-            <a class="menu__icon mobile"><span></span></a>
-            <a href="#"><img width="52px" class="mobile-logo" src="../landscaping/img/logo.png"></a>
-            <ul class="menu mobile font-size-m">
-                <li><a href="#home" class="navbar-menu-link">Home</a></li>
-                <li><a href="#about" class="navbar-menu-link">About</a></li>
-                <li><a href="#services" class="navbar-menu-link">Services</a></li>
-                <li><a href="#gallery" class="navbar-menu-link">Gallery</a></li>
-                <li><a href="#testimonials" class="navbar-menu-link">Testimonials</a></li>
-                <li><a href="#contact" class="navbar-menu-link">Contact</a></li>
-            </ul>
-        </nav>
+        </header>
 
 
-        <!--header text-->
-        <div class="header-text-container">
-            <div class="header-text-content">
-                <div class="header-text-titles">
-                    <h1 class="font-size-l">Lorem Ipsum</h1>
-                    <h2 class="font-size-s">Lorem ipsum dolor sit amet.</h2>
+        <!--About Section-->
+        <section id="about">
+
+            <!--text-->
+            <div class="about-text">
+                <div class="m-sm">
+                    <h2 class="mb-sm">About Us</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, eaque? Sapiente,
+                        voluptate unde.
+                        Veritatis eius ab labore culpa, saepe totam? Quae odio ipsam necessitatibus tempora!</p>
                 </div>
             </div>
-            <div class="header-text-btns">
-                <a href="#" class="btn-main border-radius-lg">Get Quote</a>
-                <a href="#" class="btn-secondary border-radius-lg">Learn More</a>
+
+            <!--imgs-->
+            <div class="about-img m-sm">
+                <img src="img/aboutme1.jpg">
+                <img src="img/aboutme2.jpg">
             </div>
-        </div>
-
-    </header>
+        </section>
 
 
-    <!--About Section-->
-    <section id="about">
+        <!--Services Section-->
+        <section id="services" class="container">
 
-        <!--text-->
-        <div class="about-text">
-            <h2>About Us</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, eaque? Sapiente, voluptate unde.
-                Veritatis eius ab labore culpa, saepe totam? Quae odio ipsam necessitatibus tempora!</p>
-        </div>
+            <h1 class="font-size-m">Services</h1>
 
-        <!--imgs-->
-        <div class="about-img">
-            <img src="https://via.placeholder.com/300.png/09f/fff
-    
-                        C/O https://placeholder.com/">
-            <img src="https://via.placeholder.com/300.png/09f/fff
-    
-                        C/O https://placeholder.com/">
-        </div>
-    </section>
-
-
-    <!--Services Section-->
-    <section id="services">
-
-        <h1>Services</h1>
-
-        <div class="services1">
-            <img src="#">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis maiores, quos sequi
-                necessitatibus inventore voluptatum repellat repudiandae neque aperiam sint suscipit ad nihil rerum
-                iusto?</p>
-        </div>
-        <div class="services2">
-            <img src="#">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis maiores, quos sequi
-                necessitatibus inventore voluptatum repellat repudiandae neque aperiam sint suscipit ad nihil rerum
-                iusto?</p>
-        </div>
-        <div class="services3">
-            <img src="#">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis maiores, quos sequi
-                necessitatibus inventore voluptatum repellat repudiandae neque aperiam sint suscipit ad nihil rerum
-                iusto?</p>
-        </div>
-
-    </section>
+            <div class="services-container">
+                <div class="services1">
+                    <img src="./img/scissor.svg">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis maiores, quos sequi
+                        necessitatibus inventore voluptatum repellat repudiandae neque aperiam sint suscipit ad nihil
+                        rerum
+                        iusto?</p>
+                </div>
+                <div class="services2">
+                    <img src="./img/landscaping.svg">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis maiores, quos sequi
+                        necessitatibus inventore voluptatum repellat repudiandae neque aperiam sint suscipit ad nihil
+                        rerum
+                        iusto?</p>
+                </div>
+                <div class="services3">
+                    <img src="./img/watering-can.svg">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis maiores, quos sequi
+                        necessitatibus inventore voluptatum repellat repudiandae neque aperiam sint suscipit ad nihil
+                        rerum
+                        iusto?</p>
+                </div>
+            </div>
 
 
-    <!--Gallery Section-->
+        </section>
 
-    <section id="gallery">
+        <!--Subscribe Section-->
 
-        <div>
-            <h1>Gallery</h1>
-            <h3>Lorem Ipsum</h3>
+        <section id="subscribe">
+
+            <div class="container subscribe-container">
+                <div class="subscribe-container-text">
+                    <h2 class="font-size-s">Subscribe to our newsletter!</h2>
+                    <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                </div>
+
+                <form class="subscribe-form">
+                    <input class="mb-xs mt-sm border-radius-md" type="email" id="newsletter"
+                        placeholder="  Your email...">
+                    <button class="mb-xs border-radius-md" type="submit" name="action">Subscribe</button>
+                </form>
+            </div>
+
+        </section>
+
+
+        <!--Projects Section-->
+
+        <section id="projects" class="container">
+
             <div>
-                <img src="">
-                <img src="">
-                <img src="">
-                <img src="">
-                <img src="">
-                <img src="">
-                <img src="">
-                <img src="">
-                <img src="">
+                <h1 class="font-size-m">Projects</h1>
+                <h3 class="font-size-xs">Lorem Ipsum</h3>
+                <div class="project-container">
+                    <img class="mb-sm" src="img/projects 1.jpg">
+                    <img class="mb-sm" src="img/projects2.jpg">
+                    <img class="mb-sm" src="img/projects3.jpg">
+                    <img class="mb-sm" src="img/projects4.jpg">
+                    <img class="mb-sm" src="img/projects5.jpg">
+                    <img class="mb-sm" src="img/projects6.jpg">
+                </div>
             </div>
-        </div>
 
-    </section>
+        </section>
+
+    </grid>
 
     <!--Testimonials Section-->
 
     <section id="testimonials">
 
-        <div>
-            <h1>Testimonials</h1>
-            <h3>Lorem Ipsum</h3>
-            <div>
-                <div>
-                    <i></i>
-                    <p></p>
+        <div class="container">
+
+            <h1 class="font-size-m">Testimonials</h1>
+
+            <div class="testimonial-card-container">
+                <div class="card border-radius-md">
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quaerat mollitia, aliquid
+                            dolor sunt ad unde iste excepturi, cum suscipit labore. Sapiente asperiores incidunt ea
+                            magnam reiciendis eos aliquam sed!"
+                        </p>
+                        <h5>- Lorem Ipsum</h5>
+                    </div>
                 </div>
-                <div>
-                    <i></i>
-                    <p></p>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-quote-left"></i>
+                        </div>
+                        <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quaerat mollitia, aliquid
+                            dolor sunt ad unde iste excepturi, cum suscipit labore. Sapiente asperiores incidunt ea
+                            magnam reiciendis eos aliquam sed!"
+                        </p>
+                        <h5>- Lorem Ipsum</h5>
+                    </div>
                 </div>
-                <div></div>
             </div>
+        </div>
+    </section>
+
+    <!--Map-->
+    <section id="google-map">
+
+        <div id="map">
+
+            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas"
+                src="https://maps.google.com/maps?width=1920&amp;height=485&amp;hl=en&amp;q=200%20E%20Colfax%20Ave,%20Denver,%20CO%2080203%20Denver+(Location)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            <a href="https://add-map.com/">embedding a google map</a>
         </div>
 
     </section>
@@ -163,39 +215,52 @@
     <!--Contact Section-->
     <section id="contact">
 
-        <div>
-            <h1>Contact</h1>
-            <h3>Lorem Ipsum</h3>
+        <div class="contact-container container">
+            <h1 class="font-size-m">Contact</h1>
+            <h3 class="font-size-xs">Lorem Ipsum</h3>
 
-            <form>
-                <label></label>
-                <input>
-                <label></label>
-                <input>
-                <label></label>
-                <input>
-                <label></label>
-                <input>
-            </form>
+            <div class="contact-info-container">
+                <!--item1-->
+                <form class="contact-form">
+                    <label for="fname">First name:</label>
+                    <input placeholder="First Name" type="text" id="fname" name="fname">
+                    <label place for="lname">Last name:</label>
+                    <input placeholder="Last Name" type="text" id="lname" name="lname">
+                    <label form="email">Email</label>
+                    <input placeholder="Email" type="email" id="email" name="email">
+                    <label form="phone">Phone</label>
+                    <input placeholder="Phone Number" type="tel" id="tel" name="tel">
+                    <label for="cars">Choose a car:</label>
 
-            <div>
-                <h4>Company Info</h4>
-                <h5>Address</h5>
-                <h5>Phone</h5>
-                <h5>Email</h5>
+                    <select name="service" id="service">
+                        <option value="service1">Service1</option>
+                        <option value="service2">Service2</option>
+                        <option value="service3">Service3</option>
+                        <option value="service4">Service4</option>
+                    </select>
+                </form>
+                <!--item2-->
+                <form class="bottom-form">
+                    <textarea> Your message...</textarea>
+                    <button class="border-radius-md">Submit</button>
+                </form>
+                <!--item3-->
+                <div class="company-info">
+                    <h4>Company Info</h4>
+                    <h5>Address</h5>
+                    <h5>Phone</h5>
+                    <h5>Email</h5>
+                </div>
+
             </div>
 
-            <form>
-                <textarea></textarea>
-                <button></button>
-            </form>
         </div>
 
     </section>
 
     <!--Footer Section-->
 
-    <footer id="footer">
+    <!-- <footer id="footer">
         <div>
             <h3>About Company</h3>
         </div>
@@ -214,12 +279,17 @@
         </div>
 
 
-    </footer>
+    </footer> -->
 
-
+    <!-- <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=&v=weekly&channel=2"
+        async></script> -->
 </body>
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="./js/main.js"></script>
+<script
+    src="https://embedmaps.com/google-maps-authorization/script.js?id=0d7b6329279e5c7b1fcc06640afd2097487d6335"></script>
 
 </html>

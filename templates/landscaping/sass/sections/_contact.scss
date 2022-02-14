@@ -1,0 +1,50 @@
+#contact {
+  background-image: linear-gradient(
+      rgba(24, 24, 24, 0.64),
+      rgba(24, 24, 24, 0.64),
+      rgba(24, 24, 24, 0.64)
+    ),
+    url("../img/contact-img.jpg");
+  background-position: bottom;
+  background-size: cover;
+
+  .contact-container {
+    color: white;
+    font-family: $ff-primary;
+    h1 {
+      padding-top: 3rem;
+      margin-top: 0;
+    }
+    h1,
+    h3 {
+      text-align: center;
+    }
+    .contact-info-container {
+      .contact-form,
+      .bottom-form {
+        display: flex;
+        flex-direction: column;
+      }
+      label {
+        display: none;
+      }
+      input,
+      select {
+        height: 35px;
+        max-width: 75%;
+      }
+      select {
+        font-size: 0.75rem;
+      }
+      textarea {
+        max-width: 75%;
+        font-size: 0.75rem !important;
+        height: 100px;
+      }
+      ::-webkit-input-placeholder,
+      ::placeholder {
+        font-size: 0.75rem;
+      }
+    }
+  }
+}

@@ -1,3 +1,5 @@
+@import "./variables";
+
 #header {
   display: grid;
   grid-template-columns: 1fr;
@@ -7,4 +9,40 @@
 #about {
   display: grid;
   grid-template-columns: 1fr;
+}
+.services-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.project-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+.testimonial-card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 5rem;
+  justify-items: center;
+}
+.contact-info-container {
+  // background-color: $color-secondary;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "item1"
+    "item2"
+    "item3";
+  .contact-form {
+    background-color: $color-secondary;
+    grid-area: item1;
+  }
+  .bottom-form {
+    grid-area: item2;
+    background-color: $color-secondary;
+  }
+  .company-info {
+    grid-area: item3;
+    background-color: $color-main;
+  }
 }

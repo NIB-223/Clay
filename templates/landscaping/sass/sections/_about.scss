@@ -3,3 +3,12 @@
   background-color: $color-secondary;
   color: #fff;
 }
+
+.about-img {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
+  img {
+    max-width: 100%;
+  }
+}
