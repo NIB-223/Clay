@@ -5,6 +5,13 @@
     text-align: left;
     padding-top: 3rem;
     margin-bottom: 5rem;
+    &:after {
+      content: "";
+      display: block;
+      width: 80px;
+      margin-top: 1.25rem;
+      border-bottom: 5px solid $color-main;
+    }
   }
 }
 

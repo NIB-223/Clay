@@ -11,6 +11,7 @@
   .contact-container {
     color: white;
     font-family: $ff-primary;
+    padding-bottom: 3rem;
     h1 {
       padding-top: 3rem;
       margin-top: 0;
@@ -30,20 +31,47 @@
       }
       input,
       select {
-        height: 35px;
-        max-width: 75%;
+        height: 40px;
+        width: 100%;
+        margin-bottom: 1rem;
+        border: none;
       }
       select {
-        font-size: 0.75rem;
+        font-size: 1rem;
+        display: block;
+        width: 100%;
       }
       textarea {
-        max-width: 75%;
-        font-size: 0.75rem !important;
+        max-width: 100%;
+        font-size: 1rem !important;
         height: 100px;
+        border: none;
       }
       ::-webkit-input-placeholder,
       ::placeholder {
-        font-size: 0.75rem;
+        font-size: 1rem;
+      }
+      button {
+        color: white;
+        margin-top: 1rem;
+        border: none;
+      }
+      .company-info-container {
+        .company-info {
+          h2 {
+            margin-bottom: 3rem;
+            &:after {
+              content: "";
+              display: block;
+              width: 80px;
+              margin-top: 1.25rem;
+              border-bottom: 5px solid #fff;
+            }
+          }
+          i {
+            margin-right: 1.5rem;
+          }
+        }
       }
     }
   }

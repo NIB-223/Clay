@@ -1,0 +1,49 @@
+#footer {
+  background-color: $color-secondary;
+  color: #fff;
+  font-family: $ff-primary;
+  padding-top: 20px;
+  .icons {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .subscribe-footer {
+    display: flex;
+    input {
+      height: 55px;
+      max-width: 100%;
+      width: 400px;
+      border: none;
+    }
+    button {
+      height: 55px;
+      padding: 0 1rem;
+      border: none;
+      background-color: #70a70c;
+      text-decoration: none;
+      text-align: center;
+      cursor: pointer;
+      transition: 0.25s;
+    }
+    i {
+      color: #fff;
+      font-size: 26px;
+    }
+  }
+  .fine-print {
+    ul {
+      list-style: none;
+      padding-inline-start: 0;
+    }
+  }
+  .footer-copyright {
+    text-align: center;
+    display: flex;
+    min-height: 50px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    background-color: rgba(48, 48, 48, 0.795);
+  }
+}

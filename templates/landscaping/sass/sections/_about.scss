@@ -2,6 +2,13 @@
   font-family: $ff-primary;
   background-color: $color-secondary;
   color: #fff;
+  h2:after {
+    content: "";
+    display: block;
+    width: 80px;
+    margin-top: 1.25rem;
+    border-bottom: 5px solid $color-main;
+  }
 }
 
 .about-img {

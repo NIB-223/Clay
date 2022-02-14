@@ -10,39 +10,47 @@
   display: grid;
   grid-template-columns: 1fr;
 }
+
 .services-container {
   display: grid;
   grid-template-columns: 1fr;
 }
+
 .project-container {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
+  margin-top: 4rem;
 }
+
 .testimonial-card-container {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 5rem;
   justify-items: center;
 }
+
 .contact-info-container {
-  // background-color: $color-secondary;
+  background-color: rgb(230, 230, 230);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas:
     "item1"
     "item2"
     "item3";
-  .contact-form {
-    background-color: $color-secondary;
+  .contact-form-container {
     grid-area: item1;
   }
-  .bottom-form {
+  .bottom-form-container {
     grid-area: item2;
-    background-color: $color-secondary;
   }
-  .company-info {
+  .company-info-container {
     grid-area: item3;
     background-color: $color-main;
   }
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr;
 }

@@ -150,12 +150,12 @@
                 <h1 class="font-size-m">Projects</h1>
                 <h3 class="font-size-xs">Lorem Ipsum</h3>
                 <div class="project-container">
-                    <img class="mb-sm" src="img/projects 1.jpg">
-                    <img class="mb-sm" src="img/projects2.jpg">
-                    <img class="mb-sm" src="img/projects3.jpg">
-                    <img class="mb-sm" src="img/projects4.jpg">
-                    <img class="mb-sm" src="img/projects5.jpg">
-                    <img class="mb-sm" src="img/projects6.jpg">
+                    <img class="mb-sm border-radius-md" src="img/projects 1.jpg">
+                    <img class="mb-sm border-radius-md" src="img/projects2.jpg">
+                    <img class="mb-sm border-radius-md" src="img/projects3.jpg">
+                    <img class="mb-sm border-radius-md" src="img/projects4.jpg">
+                    <img class="mb-sm border-radius-md" src="img/projects5.jpg">
+                    <img class="mb-sm border-radius-md" src="img/projects6.jpg">
                 </div>
             </div>
 
@@ -184,7 +184,7 @@
                         <h5>- Lorem Ipsum</h5>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card border-radius-md">
                     <div class="card-content">
                         <div class="card-icon">
                             <i class="fa-solid fa-quote-left"></i>
@@ -216,40 +216,50 @@
     <section id="contact">
 
         <div class="contact-container container">
+
             <h1 class="font-size-m">Contact</h1>
             <h3 class="font-size-xs">Lorem Ipsum</h3>
 
-            <div class="contact-info-container">
-                <!--item1-->
-                <form class="contact-form">
-                    <label for="fname">First name:</label>
-                    <input placeholder="First Name" type="text" id="fname" name="fname">
-                    <label place for="lname">Last name:</label>
-                    <input placeholder="Last Name" type="text" id="lname" name="lname">
-                    <label form="email">Email</label>
-                    <input placeholder="Email" type="email" id="email" name="email">
-                    <label form="phone">Phone</label>
-                    <input placeholder="Phone Number" type="tel" id="tel" name="tel">
-                    <label for="cars">Choose a car:</label>
+            <div class="contact-info-container border-radius-md">
+                <!--grid item1-->
+                <div class=" contact-form-container">
 
-                    <select name="service" id="service">
-                        <option value="service1">Service1</option>
-                        <option value="service2">Service2</option>
-                        <option value="service3">Service3</option>
-                        <option value="service4">Service4</option>
-                    </select>
-                </form>
-                <!--item2-->
-                <form class="bottom-form">
-                    <textarea> Your message...</textarea>
-                    <button class="border-radius-md">Submit</button>
-                </form>
-                <!--item3-->
-                <div class="company-info">
-                    <h4>Company Info</h4>
-                    <h5>Address</h5>
-                    <h5>Phone</h5>
-                    <h5>Email</h5>
+                    <form class="contact-form m-sm">
+                        <label for="fname">First name:</label>
+                        <input class=" border-radius-md" placeholder="First Name" type="text" id="fname" name="fname">
+                        <label place for="lname">Last name:</label>
+                        <input class=" border-radius-md" placeholder="Last Name" type="text" id="lname" name="lname">
+                        <label form="email">Email</label>
+                        <input class=" border-radius-md" placeholder="Email" type="email" id="email" name="email">
+                        <label form="phone">Phone</label>
+                        <input class=" border-radius-md" placeholder="Phone Number" type="tel" id="tel" name="tel">
+                        <label for="service">Choose a service:</label>
+                        <select class=" border-radius-md" name="service" id="service">
+                            <option value="service1">Service1</option>
+                            <option value="service2">Service2</option>
+                            <option value="service3">Service3</option>
+                            <option value="service4">Service4</option>
+                        </select>
+                    </form>
+
+                </div>
+
+                <!--gird item2-->
+                <div class="bottom-form-container">
+                    <div class="bottom-form m-sm">
+                        <textarea class="border-radius-md"> Your message...</textarea>
+                        <button class="btn-main border-radius-md">Submit</button>
+                    </div>
+                </div>
+
+                <!--grid item3-->
+                <div class="company-info-container">
+                    <div class="company-info m-sm">
+                        <h2 class="font-size-s">Company Info</h2>
+                        <h5 class="font-size-xs"><i class="fa-solid fa-location-dot"></i>200 E Colfax Ave</h5>
+                        <h5 class="font-size-xs"> <i class="fa-solid fa-phone"></i>555-555-5555</h5>
+                        <h5 class="font-size-xs"><i class="fa-solid fa-envelope"></i>yourcompany@gmail.com</h5>
+                    </div>
                 </div>
 
             </div>
@@ -260,26 +270,50 @@
 
     <!--Footer Section-->
 
-    <!-- <footer id="footer">
-        <div>
-            <h3>About Company</h3>
+    <footer id="footer">
+        <div class="container footer-container">
+            <div class="footer-section1 mb-md">
+                <h3 class="font-size-s">About Company</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, eos iure? Amet officia nisi,
+                    quisquam reprehenderit fugit optio explicabo nam quibusdam architecto soluta ratione quia.</p>
+            </div>
+            <div class="footer-section2 mb-md">
+                <h3 class="font-size-s">Business Hours</h3>
+                <p>Monday-Friday</p>
+
+                <p>7:30am-5:30pm</p>
+            </div>
+            <div class="footer-section3 mb-md">
+                <h3 class="font-size-s">Connections</h3>
+                <div class="icons mb-xs">
+                    <i class="fa-brands fa-instagram fa-3x mr-sm"></i>
+                    <i class="fa-brands fa-twitter-square fa-3x mr-sm"></i>
+                    <i class="fa-solid fa-square-envelope fa-3x mr-sm"></i>
+                </div>
+                <div class="subscribe-footer">
+                    <input class="border-bottom-left-radius-md border-top-left-radius-md" placeholder="Subscribe"
+                        type="email">
+                    <button class="border-bottom-right-radius-md border-top-right-radius-md" type="submit"><i
+                            class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </div>
+            <div class="fine-print">
+                <ul>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <h3>Business Hours</h3>
-        </div>
-        <div>
-            <h3>Connections</h3>
-            <i></i>
-            <i></i>
-            <i></i>
-        </div>
-        <div>
-            <input>
-            <button></button>
+        <div class="footer-copyright">
+            <div class="container">
+                @2022 YourWebsite Inc
+            </div>
         </div>
 
 
-    </footer> -->
+
+
+    </footer>
 
     <!-- <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&libraries=&v=weekly&channel=2"
