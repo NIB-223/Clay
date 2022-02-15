@@ -877,7 +877,7 @@ ul {
   left: 0;
   transform-origin: center center;
   transform: rotate(0deg);
-  transition: all 0.3s ease;
+  transition: all 0.3s linear;
 }
 .menu__icon:before {
   top: 2px;
@@ -1690,9 +1690,12 @@ ul {
   font-family: "Roboto", sans-serif;
   border: none;
   margin-bottom: 16px;
+  transition: 0.25s;
+  cursor: pointer;
 }
 #subscribe .subscribe-container .subscribe-form button:hover, #subscribe .subscribe-container .subscribe-form button:focus {
   background-color: #353535;
+  transition: 0.25s;
 }
 
 @media (min-width: 400px) {

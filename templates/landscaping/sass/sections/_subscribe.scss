@@ -41,9 +41,12 @@
         font-family: $ff-primary;
         border: none;
         margin-bottom: 16px;
+        transition: 0.25s;
+        cursor: pointer;
         &:hover,
         &:focus {
           background-color: rgb(53, 53, 53);
+          transition: 0.25s;
         }
       }
     }
