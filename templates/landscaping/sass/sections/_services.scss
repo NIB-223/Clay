@@ -2,10 +2,13 @@
   color: $color-secondary;
   font-family: $ff-primary;
   text-align: center;
-  .services1,
-  .services2,
-  .services3 {
-    margin: 3rem 0;
+  .services-container {
+    margin: 80px 0;
+    .services1,
+    .services2,
+    .services3 {
+      margin: 3rem;
+    }
   }
 }
 

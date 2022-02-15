@@ -2,14 +2,19 @@
   margin-bottom: 48px;
 }
 .about-text {
+  display: flex;
   font-family: $ff-primary;
   background-color: $color-secondary;
   color: #fff;
+  align-items: center;
+  .text-container {
+    margin-bottom: 200px;
+  }
   h2:after {
     content: "";
     display: block;
     width: 80px;
-    margin-top: 1.25rem;
+    margin-top: 1rem;
     border-bottom: 5px solid $color-main;
   }
 }
