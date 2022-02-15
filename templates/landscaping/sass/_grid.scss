@@ -160,7 +160,7 @@
   }
 }
 
-@media (min-width: map-get($viewport_size, xxl)) {
+@media (min-width: 1500px) {
   .project-container {
     grid-template-columns: 1fr 1fr 1fr;
   }

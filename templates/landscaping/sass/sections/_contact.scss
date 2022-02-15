@@ -67,6 +67,7 @@
         }
       }
       .company-info-container {
+        border-top-right-radius: 0.375rem;
         .company-info {
           h2 {
             margin-bottom: 3rem;
@@ -98,7 +99,7 @@
   }
 }
 
-@media (min-width: map-get($viewport_size, xxl)) {
+@media (min-width: map-get($viewport_size, xl)) {
   .contact-container {
     max-width: 1050px;
   }

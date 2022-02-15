@@ -160,7 +160,7 @@ ul {
     }
   }
 }
-@media (max-width: map-get($viewport_size, s-m)) {
+@media (max-width: map-get($viewport_size, m)) {
   .mobile {
     &.menu {
       width: 100%;
