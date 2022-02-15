@@ -21,8 +21,14 @@
       text-align: center;
     }
     .contact-info-container {
-      .contact-form,
+      margin-top: 48px;
+      .contact-form {
+        margin-bottom: 0rem;
+        display: flex;
+        flex-direction: column;
+      }
       .bottom-form {
+        margin-top: 0.5rem;
         display: flex;
         flex-direction: column;
       }
@@ -55,6 +61,10 @@
         color: white;
         margin-top: 1rem;
         border: none;
+        &:hover,
+        &:focus {
+          background-color: $btn-hover;
+        }
       }
       .company-info-container {
         .company-info {
@@ -74,5 +84,19 @@
         }
       }
     }
+  }
+}
+
+@media (min-width: map-get($viewport_size, m)) {
+  .contact-info-container {
+    .bottom-form {
+      margin-top: 2rem !important;
+    }
+  }
+}
+
+@media (min-width: map-get($viewport_size, xxl)) {
+  .contact-container {
+    max-width: 1050px;
   }
 }

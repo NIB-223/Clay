@@ -1,9 +1,11 @@
 #subscribe {
   background-color: $color-main;
+  margin: 64px 0;
 
   .subscribe-container {
     display: flex;
     flex-direction: column;
+    margin: 32px;
 
     .subscribe-container-text {
       h2,
@@ -13,13 +15,19 @@
       }
     }
 
+    #viewport-s-m-form {
+      display: none;
+    }
+
     .subscribe-form {
       width: 100%;
       display: flex;
       flex-direction: column;
+      margin-top: 32px;
       input {
         height: 45px;
         border: none;
+        margin-bottom: 16px;
       }
       ::-webkit-input-placeholder {
         font-family: $ff-secondary;
@@ -32,7 +40,72 @@
         color: #fff;
         font-family: $ff-primary;
         border: none;
+        margin-bottom: 16px;
+        &:hover,
+        &:focus {
+          background-color: rgb(53, 53, 53);
+        }
       }
+    }
+  }
+}
+
+@media (min-width: map-get($viewport_size, s-m)) {
+  #subscribe {
+    .subscribe-container {
+      #viewport-s-form {
+        display: none;
+      }
+      #viewport-s-m-form {
+        display: flex;
+      }
+      .subscribe-form {
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 32px;
+        input {
+          margin-bottom: 0;
+          width: 325px;
+        }
+        button {
+          margin-bottom: 0;
+          padding: 0 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: map-get($viewport_size, m)) {
+  #subscribe {
+    .subscribe-container {
+      flex-direction: row;
+      gap: 80px;
+      .subscribe-form {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (min-width: map-get($viewport_size, l)) {
+  #subscribe {
+    .subscribe-container {
+      flex-direction: row;
+      justify-content: space-between;
+      .subscribe-form {
+        width: 500px;
+        justify-content: end;
+      }
+    }
+  }
+}
+
+@media (min-width: map-get($viewport_size, xl)) {
+  #subscribe {
+    .subscribe-container {
+      flex-direction: row;
+      justify-content: space-around;
     }
   }
 }

@@ -10,13 +10,13 @@
   .subscribe-footer {
     display: flex;
     input {
-      height: 55px;
-      max-width: 100%;
-      width: 400px;
+      height: 45px;
+      width: 100%;
+      max-width: 400px;
       border: none;
     }
     button {
-      height: 55px;
+      height: 45px;
       padding: 0 1rem;
       border: none;
       background-color: #70a70c;
@@ -24,6 +24,10 @@
       text-align: center;
       cursor: pointer;
       transition: 0.25s;
+      &:hover,
+      &:focus {
+        background-color: $btn-hover;
+      }
     }
     i {
       color: #fff;
@@ -45,5 +49,32 @@
     justify-content: space-between;
     padding: 10px 0;
     background-color: rgba(48, 48, 48, 0.795);
+  }
+}
+
+@media (min-width: map-get($viewport_size, m)) {
+  .footer-container {
+    .footer-section2 {
+      justify-self: center;
+    }
+    .fine-print {
+      align-self: end;
+      justify-self: center;
+      margin-bottom: 18px;
+      margin-right: 110px;
+    }
+  }
+}
+
+@media (min-width: map-get($viewport_size, xl)) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    .footer-section2 {
+      justify-self: baseline;
+    }
+    .fine-print {
+      justify-self: baseline;
+      margin: 0;
+    }
   }
 }

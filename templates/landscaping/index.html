@@ -31,7 +31,7 @@
                         <a href="#home" class="navbar-menu-link"><span class="nav_border">Home</span></a>
                         <a href="#about" class="navbar-menu-link"><span class="nav_border">About</span></a>
                         <a href="#services" class="navbar-menu-link"><span class="nav_border">Services</span></a>
-                        <a href="#gallery" class="navbar-menu-link"><span class="nav_border">Gallery</span></a>
+                        <a href="#projects" class="navbar-menu-link"><span class="nav_border">Projects</span></a>
                         <a href="#testimonials" class="navbar-menu-link"><span
                                 class="nav_border">Testimonials</span></a>
                         <a href="#contact" class="navbar-menu-link"><span class="nav_border">Contact</span></a>
@@ -45,7 +45,7 @@
                     <li><a href="#home" class="navbar-menu-link">Home</a></li>
                     <li><a href="#about" class="navbar-menu-link">About</a></li>
                     <li><a href="#services" class="navbar-menu-link">Services</a></li>
-                    <li><a href="#gallery" class="navbar-menu-link">Gallery</a></li>
+                    <li><a href="#projects" class="navbar-menu-link">Projects</a></li>
                     <li><a href="#testimonials" class="navbar-menu-link">Testimonials</a></li>
                     <li><a href="#contact" class="navbar-menu-link">Contact</a></li>
                 </ul>
@@ -71,22 +71,32 @@
 
         <!--About Section-->
         <section id="about">
-
-            <!--text-->
+            <!--grid-item1 (text)-->
             <div class="about-text">
                 <div class="m-sm">
                     <h2 class="mb-sm">About Us</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, eaque? Sapiente,
-                        voluptate unde.
-                        Veritatis eius ab labore culpa, saepe totam? Quae odio ipsam necessitatibus tempora!</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis praesentium suscipit, ea quod
+                        iure ipsum dignissimos consequuntur voluptatibus esse ab, autem cupiditate. Dolore alias a
+                        aspernatur quo necessitatibus laudantium eligendi dolorem sed voluptatibus placeat natus
+                        veritatis, laborum animi quaerat, nobis inventore fugiat quidem modi eius, magnam corporis
+                        quibusdam autem. Saepe.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo ab facere perspiciatis
+                        accusantium, aliquid aspernatur nam ut perferendis reiciendis. Blanditiis nesciunt asperiores
+                        distinctio nam.</p>
                 </div>
             </div>
 
-            <!--imgs-->
-            <div class="about-img m-sm">
-                <img src="img/aboutme1.jpg">
-                <img src="img/aboutme2.jpg">
+
+            <div class="about-img-background">
+
+                <!--grid-area2 (imgs)-->
+                <div class="about-img">
+                    <img class="img1" src="img/aboutme1.jpg">
+                    <img class="img2" src="img/aboutme2.jpg">
+                </div>
             </div>
+
+
         </section>
 
 
@@ -94,6 +104,7 @@
         <section id="services" class="container">
 
             <h1 class="font-size-m">Services</h1>
+            <h3 class="font-size-xs">Lorem Ipsum</h3>
 
             <div class="services-container">
                 <div class="services1">
@@ -126,16 +137,22 @@
 
         <section id="subscribe">
 
-            <div class="container subscribe-container">
+            <div class="subscribe-container">
                 <div class="subscribe-container-text">
                     <h2 class="font-size-s">Subscribe to our newsletter!</h2>
-                    <p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                 </div>
 
-                <form class="subscribe-form">
-                    <input class="mb-xs mt-sm border-radius-md" type="email" id="newsletter"
+                <form id="viewport-s-form" class="subscribe-form">
+                    <input class="border-radius-md" type="email" id="newsletter" placeholder="  Your email...">
+                    <button class="border-radius-md" type="submit" name="action">Subscribe</button>
+                </form>
+
+                <form id="viewport-s-m-form" class="subscribe-form">
+                    <input class="border-bottom-left-radius-md border-top-left-radius-md" type="email" id="newsletter2"
                         placeholder="  Your email...">
-                    <button class="mb-xs border-radius-md" type="submit" name="action">Subscribe</button>
+                    <button class="border-bottom-right-radius-md border-top-right-radius-md" type="submit"
+                        name="action">Subscribe</button>
                 </form>
             </div>
 
@@ -234,7 +251,7 @@
                         <label form="phone">Phone</label>
                         <input class=" border-radius-md" placeholder="Phone Number" type="tel" id="tel" name="tel">
                         <label for="service">Choose a service:</label>
-                        <select class=" border-radius-md" name="service" id="service">
+                        <select class="border-radius-md" name="service" id="service">
                             <option value="service1">Service1</option>
                             <option value="service2">Service2</option>
                             <option value="service3">Service3</option>
@@ -244,7 +261,7 @@
 
                 </div>
 
-                <!--gird item2-->
+                <!--grid item2-->
                 <div class="bottom-form-container">
                     <div class="bottom-form m-sm">
                         <textarea class="border-radius-md"> Your message...</textarea>
@@ -272,23 +289,24 @@
 
     <footer id="footer">
         <div class="container footer-container">
-            <div class="footer-section1 mb-md">
+            <div class="footer-section1 mb-sm">
                 <h3 class="font-size-s">About Company</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, eos iure? Amet officia nisi,
-                    quisquam reprehenderit fugit optio explicabo nam quibusdam architecto soluta ratione quia.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio obcaecati vel, cumque
+                    dignissimos, quo ut officia voluptatem aliquid debitis esse aspernatur quod. Rem, possimus
+                    excepturi.</p>
             </div>
-            <div class="footer-section2 mb-md">
+            <div class="footer-section2 mb-sm">
                 <h3 class="font-size-s">Business Hours</h3>
                 <p>Monday-Friday</p>
 
                 <p>7:30am-5:30pm</p>
             </div>
-            <div class="footer-section3 mb-md">
-                <h3 class="font-size-s">Connections</h3>
+            <div class="footer-section3 mb-sm">
+                <h3 class="font-size-s">Connect </h3>
                 <div class="icons mb-xs">
-                    <i class="fa-brands fa-instagram fa-3x mr-sm"></i>
-                    <i class="fa-brands fa-twitter-square fa-3x mr-sm"></i>
-                    <i class="fa-solid fa-square-envelope fa-3x mr-sm"></i>
+                    <a href="#"><i class="fa-brands fa-instagram fa-3x mr-sm"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter-square fa-3x mr-sm"></i></a>
+                    <a href="#"><i class="fa-solid fa-square-envelope fa-3x mr-sm"></i></a>
                 </div>
                 <div class="subscribe-footer">
                     <input class="border-bottom-left-radius-md border-top-left-radius-md" placeholder="Subscribe"

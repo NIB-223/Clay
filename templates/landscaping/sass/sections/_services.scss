@@ -8,3 +8,23 @@
     margin: 3rem 0;
   }
 }
+
+@media (min-width: map-get($viewport_size, m)) {
+  #services {
+    .services1,
+    .services2,
+    .services3 {
+      margin: 6rem;
+    }
+  }
+}
+
+@media (min-width: map-get($viewport_size, l)) {
+  #services {
+    .services1,
+    .services2,
+    .services3 {
+      margin: 1rem;
+    }
+  }
+}

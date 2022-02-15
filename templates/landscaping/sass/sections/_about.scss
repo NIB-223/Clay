@@ -1,3 +1,6 @@
+#about {
+  margin-bottom: 48px;
+}
 .about-text {
   font-family: $ff-primary;
   background-color: $color-secondary;
@@ -11,11 +14,9 @@
   }
 }
 
-.about-img {
-  display: grid;
-  grid-template-columns: 1fr;
-  row-gap: 2rem;
-  img {
-    max-width: 100%;
+.about-img-background {
+  background-color: #e6e6e6;
+  .about-img {
+    padding: 2rem;
   }
 }
