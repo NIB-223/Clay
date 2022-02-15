@@ -1633,7 +1633,7 @@ ul {
 #services .services-container .services1,
 #services .services-container .services2,
 #services .services-container .services3 {
-  margin: 3rem;
+  margin: 3rem 0;
 }
 
 @media (min-width: 768px) {
@@ -1647,7 +1647,7 @@ ul {
   #services .services1,
 #services .services2,
 #services .services3 {
-    margin: 1rem;
+    margin: 3rem 2rem !important;
   }
 }
 #subscribe {
