@@ -86,7 +86,7 @@ ul {
     position: absolute;
     top: 0;
     left: 0;
-    width: 75%;
+    width: 100%;
     min-height: 100vh;
     text-align: left;
     padding-top: 112px;
@@ -160,10 +160,10 @@ ul {
     }
   }
 }
-@media (max-width: map-get($viewport_size, m)) {
+@media (min-width: 550px) {
   .mobile {
     &.menu {
-      width: 100%;
+      width: 75%;
     }
   }
 }
