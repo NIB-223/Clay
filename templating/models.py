@@ -11,3 +11,4 @@ class Template(models.Model):
         on_delete=models.SET_NULL,
         null=True, blank=True
     )
+    published = models.BooleanField(default=False)
