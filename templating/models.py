@@ -12,3 +12,4 @@ class Template(models.Model):
         null=True, blank=True
     )
     published = models.BooleanField(default=False)
+    lighthouse_score = models.IntegerField(default=0)
