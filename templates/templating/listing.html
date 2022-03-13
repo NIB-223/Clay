@@ -9,5 +9,10 @@
 </head>
 <body>
     <p>Templates listing</p>
+    <ul>
+        {% for template in templates %}
+            <li><a href="{% url 'templating:view' slug=template.slug %}">{{ template.name }}</a></li>
+        {% endfor %}
+    </ul>
 </body>
 </html>
