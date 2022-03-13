@@ -2,3 +2,5 @@ Django
 pytz
 django-debug-toolbar
 django-htmlmin
+django-crispy-forms
+GitPython
