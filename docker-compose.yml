@@ -1,0 +1,56 @@
+version: '2'
+services:
+  python:
+    build:
+      context: .
+      dockerfile: .docker/python/Dockerfile
+    expose:
+      - "49152"
+    volumes:
+      - .:/app
+    depends_on:
+      - postgresql
+      - webpack
+      - redis
+    env_file:
+      - .env
+
+  apache:
+    build:
+      context: .
+      dockerfile: .docker/apache/Dockerfile
+    ports:
+      - "80:80"
+    volumes:
+      - ./static:/app/static
+      - ./media:/app/media
+    depends_on:
+      - python
+
+  webpack:
+    build:
+      context: .
+      dockerfile: .docker/webpack/Dockerfile
+    volumes:
+      - .:/app
+
+  postgresql:
+    build:
+      context: .
+      dockerfile: .docker/postgresql/Dockerfile
+    volumes:
+      - /var/lib/postgresql/docker/domain.com/data:/var/lib/postgresql/data
+      - /var/lib/postgresql/docker/domain.com/dump:/var/lib/postgresql/dump
+    expose:
+      - "${DB_PORT}"
+    environment:
+      - POSTGRES_PASSWORD=${DB_PASS}
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_DB=${DB_NAME}
+    env_file:
+      - .env
+
+  redis:
+    image: redis
+    expose:
+      - "6379"
