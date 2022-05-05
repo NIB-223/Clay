@@ -1,4 +1,7 @@
 Django
 pytz
+psycopg2
+uwsgi
 django-debug-toolbar
 django-htmlmin
+django-redis
