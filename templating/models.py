@@ -1,3 +1,5 @@
+import os
+
 from django.conf import settings
 from django.db import models
 from django.utils.text import slugify
@@ -5,7 +7,7 @@ from git import Repo
 
 
 class Template(models.Model):
-    TEMPLATES_DIR = settings.BASE_DIR / 'git_templates'
+    TEMPLATES_DIR = os.path.join(settings.BASE_DIR, 'git_templates')
 
     name = models.CharField(max_length=255)
     slug = models.SlugField(max_length=255)
@@ -27,7 +29,7 @@ class Template(models.Model):
         repo.remotes.origin.pull()
 
     def get_template_path(self):
-        return f"{self.TEMPLATES_DIR}/{self.slug}"
+        return os.path.join(self.TEMPLATES_DIR, self.slug)
 
     def save(self, force_insert=False, force_update=False, using=None,
              update_fields=None):
