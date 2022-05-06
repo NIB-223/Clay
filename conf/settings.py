@@ -18,7 +18,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REQUIRED_ENVS = ["SECRET", "ENV", "DB_NAME", "DB_USER", "DB_PASS", "DB_HOST", "DB_PORT"]
 for required in REQUIRED_ENVS:
     if os.getenv(required, None) is None:
-        raise ImproperlyConfigured("La variable d'environnement " + required + " n'est pas settée.")
+        raise ImproperlyConfigured("ENV var " + required + " is missing.")
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
