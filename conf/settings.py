@@ -31,7 +31,7 @@ DEBUG = os.getenv("ENV") == 'DEV'
 
 ALLOWED_HOSTS = ['*']
 
-TLD = "http://localhost"
+TLD = "http://localhost:8080"
 
 # Users
 LOGIN_REDIRECT_URL = '/'
