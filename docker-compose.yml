@@ -54,3 +54,12 @@ services:
     image: redis
     expose:
       - "6379"
+
+  node:
+    build:
+      context: .
+      dockerfile: .docker/node/Dockerfile
+    ports:
+      - "4040:4040"
+    volumes:
+      - .docker/node/app:/app
